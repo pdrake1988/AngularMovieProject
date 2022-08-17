@@ -1,0 +1,18 @@
+<header>
+    <div>
+        <img src="{{movieData.posterUrl}}" alt="{{movieData.title}}"/>
+    </div>
+    <div>
+        <h1>{{movieData.title}}</h1>
+    </div>
+    <div>
+        <h3>{{movieData.originalLanguage}}</h3>
+        <h3>{{movieData.releaseDate}}</h3>
+    </div>
+</header>
+<main>
+    <div>
+        <h3 *ngFor="let genre of movieData.genres">{{genre.name}}</h3>
+        <p>{{movieData.overview}}</p>
+    </div>
+</main>

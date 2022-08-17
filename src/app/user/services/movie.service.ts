@@ -9,7 +9,7 @@ export class MovieService {
   constructor(private httpClient: HttpClient) { }
 
   getAllMovies() {
-    return this.httpClient.get<Movie>('http://localhost:7210/movies/GetAllMovies');
+    return this.httpClient.get<Movie[]>('http://localhost:7210/movies/GetAllMovies');
   }
   getMovieById(id: number) {
     return this.httpClient.get<Movie>('http://localhost:7210/movies/GetMovieById/' + id);
