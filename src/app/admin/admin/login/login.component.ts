@@ -19,6 +19,7 @@ export class LoginComponent implements OnInit {
   login() {
     this.accoutService.login(this.userInfo).subscribe(token => 
       this.cookieService.set('jwt_token', token.toString()));
+      this.accoutService.isLoggedIn = true;
       this.eventEmitter.emit(false);
   }
 }

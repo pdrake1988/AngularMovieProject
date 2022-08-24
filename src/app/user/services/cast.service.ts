@@ -13,4 +13,7 @@ export class CastService {
   getCastMemberById(id: number) {
     return this.httpClient.get('http://localhost:7210/api/cast/getcastmemberbyid/' + id);
   }
+  createCastMember(castMember: any) {
+    this.httpClient.post("https://localhost:7210/addcastmember/", castMember)
+  }
 }

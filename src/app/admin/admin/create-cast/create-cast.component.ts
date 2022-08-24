@@ -17,6 +17,6 @@ export class CreateCastComponent implements OnInit {
   ngOnInit(): void {
   }
   createCastMember() {
-    this.castService.
+    this.castService.createCastMember(this.castInfo);
   }
 }

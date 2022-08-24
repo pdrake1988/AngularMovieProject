@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin/admin/admin.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
-  {path: 'movies', loadChildren: () => import('./user/user.module').then(m => m.UserModule)},
+  {path: 'movies', canLoad: [AuthGuard], loadChildren: () => import('./user/user.module').then(m => m.UserModule)},
   {path: '', component: AdminComponent, pathMatch: 'full'}
 ];
 
