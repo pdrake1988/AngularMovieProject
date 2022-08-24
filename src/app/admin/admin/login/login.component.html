@@ -1,0 +1,9 @@
+<div>
+    <form action="post" (submit)="login">
+        <label for="email">Email</label>
+        <input id="email" type="email" [value]="userInfo.email"/>
+        <label for="password">Password</label>
+        <input id="password" type="password" [value]="userInfo.password"/>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</div>

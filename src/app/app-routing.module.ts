@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminComponent } from './admin/admin/admin.component';
 
 const routes: Routes = [
-  {path: '', loadChildren: () => import('./user/user.module').then(m => m.UserModule)}
+  {path: 'movies', loadChildren: () => import('./user/user.module').then(m => m.UserModule)},
+  {path: '', component: AdminComponent, pathMatch: 'full'}
 ];
 
 @NgModule({

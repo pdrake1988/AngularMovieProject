@@ -1,0 +1,39 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+header div {
+    margin: auto;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#movie-modal {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#heading {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#authentication {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+#movie-modal button {
+    margin: 5px;
+    padding: 5px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 4px;
+}
+#authentication a, button {
+    background-color: lightskyblue;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    color: black;
+}

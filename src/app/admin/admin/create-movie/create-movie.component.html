@@ -1,0 +1,25 @@
+<div>
+    <form action="submit" (submit)="createMovie">
+        <label for="title">Title</label>
+        <input id="title" [value]="movieInfo.title"/>
+        <label for="overview">Overview</label>
+        <input id="overview" [value]="movieInfo.overview"/>
+        <label for="tagline">Tagline</label>
+        <input id="tagline" [value]="movieInfo.tagLine"/>
+        <label for="budget">Budget</label>
+        <input id="budget" [value]="movieInfo.budget"/>
+        <label for="revenue">Revenue</label>
+        <input id="revenue" [value]="movieInfo.revenue"/>
+        <label for="imdburl">ImdbUrl</label>
+        <input id="imdburl" [value]="movieInfo.imdbUrl"/>
+        <label for="posterUrl">Poster Url</label>
+        <input id="posterUrl" [value]="movieInfo.posterUrl"/>
+        <label for="originalLanguage">Original Language</label>
+        <input id="originalLanguage" [value]="movieInfo.originalLanguage"/>
+        <label for="runtime">Run Time</label>
+        <input id="runtime" [value]="movieInfo.runtime"/>
+        <label for="price">Price</label>
+        <input id="price" [value]="movieInfo.price"/>
+        <button type="submit">Submit</button>
+    </form>
+</div>

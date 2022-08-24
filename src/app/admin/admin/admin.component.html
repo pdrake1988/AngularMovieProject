@@ -1,0 +1,18 @@
+<header>
+    <div id="movie-modal">
+        <button >Create Movie</button>
+        <button >Create Cast</button>
+    </div>
+    <div id="heading">
+        <h1>My Movie App</h1>
+    </div>
+    <div id="authentication">
+        <a routerLink="movies" *ngIf="isLoggedIn">Movies Page</a>
+        <button (click)="showLoginModal = true" *ngIf="!isLoggedIn">Login</button>
+        <button (click)="registerModal = true" *ngIf="!isLoggedIn">Register</button>
+    </div>
+</header>
+<main>
+    <app-login *ngIf="showLoginModal"></app-login>
+    <app-register *ngIf="registerModal"></app-register>
+</main>

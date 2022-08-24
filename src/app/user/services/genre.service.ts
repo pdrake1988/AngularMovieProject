@@ -9,7 +9,7 @@ export class GenreService {
   constructor(private httpClient: HttpClient) { }
 
   getAllGenres() {
-    return this.httpClient.get<Genre>('https://localhost:7210/api/genres/GetAllGenres');
+    return this.httpClient.get<Genre>('https://localhost:7210/api/genre/getallgenres');
   }
 
 }

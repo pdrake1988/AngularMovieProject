@@ -8,9 +8,9 @@ export class CastService {
   constructor(private httpClient: HttpClient) { }
 
   getAllCastMembers() {
-    return this.httpClient.get('http://localhost:7210/api/Cast/GetAllCastMembers');
+    return this.httpClient.get('http://localhost:7210/api/cast/getallcastmembers');
   }
   getCastMemberById(id: number) {
-    return this.httpClient.get('http://localhost:7210/api/Cast/GetCastMemberById/' + id);
+    return this.httpClient.get('http://localhost:7210/api/cast/getcastmemberbyid/' + id);
   }
 }
