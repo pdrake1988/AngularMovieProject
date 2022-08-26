@@ -1,22 +1,25 @@
 <header>
-    <nav>
-        <div class="nav-item">
-            <button>Genres</button>
-            <div>
-                <ul>
-                    <li *ngFor="let genre of genres">
-                        <a>{{genre.name}}</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <h1 class="nav-item">Movies Page</h1>
-        <a>Admin Page</a>
-    </nav>
+  <nav>
+    <div class="nav-item">
+      <button>Genres</button>
+      <div>
+        <ul>
+          <li *ngFor="let genre of genres">
+            <a>{{ genre.name }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h1 class="nav-item">Movies Page</h1>
+    <div>
+      <a [routerLink]="['favorties']">Favorites Page</a>
+      <a [routerLink]="['purchases']">Purhases Page</a>
+    </div>
+  </nav>
 </header>
 <main>
-    <div *ngFor="let movie of movies">
-        <img src="{{movie.posterUrl}}" alt="movie.title">
-        <h2>{{movie.title}}</h2>
-    </div>
+  <div *ngFor="let movie of movies">
+    <img src="{{ movie.posterUrl }}" alt="movie.title" />
+    <h2>{{ movie.title }}</h2>
+  </div>
 </main>

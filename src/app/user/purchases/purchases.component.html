@@ -1,1 +1,10 @@
-<p>purchases works!</p>
+<header>
+  <a [routerLink]="['movies']" ]>Movies Page</a>
+  <h1>Favorites Page</h1>
+  <a [routerLink]="['favorites']">Purchases</a>
+</header>
+<main>
+  <div *ngFor="let movie of movies">
+    <app-movie-card [movieId]="movie.movieId"></app-movie-card>
+  </div>
+</main>
